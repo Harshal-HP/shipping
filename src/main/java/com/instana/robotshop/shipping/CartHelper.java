@@ -69,7 +69,7 @@ public class CartHelper {
             }
         }
 
-        // this will be empty on error
+        //  this will be empty on error
         return buffer.toString();
     }
 }

@@ -9,3 +9,4 @@ jobs:
     uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'maven'
+      appName: 'shipping'

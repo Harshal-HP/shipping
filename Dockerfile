@@ -3,4 +3,4 @@ RUN         yum install shadow-utils -y && useradd roboshop && mkdir /app && cho
 WORKDIR     /app
 USER        roboshop
 COPY        target/shipping-1.0.jar /app/shipping.jar
-ENTRYPOINT  ["java", "-jar", "/app/shipping.jar"]
+ENTRYPOINT  ["java", "-xx:InitialRAMPercentage=80.0", "-xx:MaxRAMPercentage=90.0", "-jar", "/app/shipping.jar"]
